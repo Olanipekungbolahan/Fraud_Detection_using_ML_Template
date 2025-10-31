@@ -80,27 +80,27 @@ modality), measurements (specify units), sensor/attachments, report, questionnai
 
 **Who or what provides the inputs?**
 
-TODO: Fill this in, or refer to other documents. Example responses include: user, other medical devices, other 
-non-medical devices or software.
+TODO: Fill this in, or refer to other documents. Example responses include: users, payment gateways, merchant systems,
+issuer processors, or other external services.
 
-**Is the device designed to be interoperable?**
+**Is the system designed to be interoperable?**
 
-TODO: Fill this in, or refer to other documents, such as the architecture design chart and/or the appropriate sections 
-of the SDS. Another way to ask the question is: does the device transmit, exchange, and/or use information through an 
-electronic interface with another medical/nonmedical product, system, or device? If yes, list the other products that 
-the device interfaces with, and what methods, standards, and specifications are used to interact and/or communicate 
-with other medical/nonmedical products, systems, or devices.
+TODO: Fill this in, or refer to other documents, such as the architecture design chart and/or the appropriate sections
+of the SDS. Another way to ask the question is: does the system transmit, exchange, and/or use information through an
+electronic interface with another product, system, or service (for example, payment gateways, issuer processors, or
+fraud-analytics pipelines)? If yes, list the other products or services that the system interfaces with, and what methods,
+standards, and specifications are used to interact and/or communicate with them.
 
 **What are the outputs and their format?**
 
-TODO: Refer to where in the submission the performance testing of the outputs, including test setup, acceptance 
+TODO: Refer to where in the submission the performance testing of the outputs, including test setup, acceptance
 criteria, and results, are located. Examples: testing for accuracy and repeatability of output measurements, parametric
-analyses, model outputs, device generated segmentation contours, medical image enhancements.
+analyses, model outputs, alerts, reports, and dashboard visualisations.
 
 **To whom are the outputs provided?**
 
-TODO: Fill in this section, or refer to other documents. Examples responses include: patients, caregivers, healthcare 
-professionals, technicians, researchers, health records, interoperable systems.
+TODO: Fill in this section, or refer to other documents. Example responses include: cardholders, fraud analysts, payments
+professionals, downstream systems, logs, and dashboards.
 
 **What is the data or information flow of the software?**
 
@@ -119,9 +119,9 @@ Yes, the software uses cloud or network storage.
 
 This device does not contain any other device functions.
 
-TODO: Medical products may contain several functions, some of which are subject to FDA’s regulatory oversight as medical
-devices, while others are not. The draft text for this section indicates there are no other device functions, but if 
-the device is a multiple function device product and includes software function(s) that are considered “other functions”
+TODO: Some products may contain several functions, some of which are subject to additional regulatory oversight while
+others are not. The draft text for this section indicates there are no other product functions, but if the product is a
+multiple-function product and includes software function(s) that are considered “other functions”
 please refer to the guidance titled "Multiple Function Device Product: Policy and Considerations," and add additional 
 information to this section as appropriate. In particular, see section VII.B, which says:
 

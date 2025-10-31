@@ -6,7 +6,7 @@ title: Cybersecurity Risk Management Report
 
 # Purpose
 
-The purpose of this document is to demonstrate the cybersecurity design controls and risk management found in {{device.name}} for FDA reviewers in a format that closely follows the 2018 Draft Guidance, "Content of Premarket Submissions for Management of Cybersecurity in Medical Devices".
+The purpose of this document is to demonstrate the cybersecurity design controls and risk management found in {{device.name}} in a format that follows best-practice guidance. The content focuses on the protection of cardholder data, transaction integrity, and prevention of fraud.
 
 # Scope
 
@@ -20,16 +20,16 @@ TODO: Select the appropriate cybersecurity risk tier, based on your device. Thre
 
 {{device.name}} is Tier 1, "Higher Cybersecurity Risk," because
 
-1. The device is capable of connecting to another medical or non-medical product, to a network, or to the Internet, and
-2. A cybersecurity incident affecting the device could directly result in patient harm to multiple patients.
+1. The system is capable of connecting to payment gateways, issuer processors, merchant systems, or the Internet, and
+2. A cybersecurity incident affecting the system could directly result in widespread cardholder financial loss or large-scale fraud.
 
 ---
 
-{{device.name}} is Tier 2, "Normal Cybersecurity Risk," because the device is _not_ capable of connecting to another medical or non-medical product, to a network, or to the Internet.
+{{device.name}} is Tier 2, "Normal Cybersecurity Risk," because the system is _not_ capable of connecting to other payment or networked systems, or the Internet.
 
 ---
 
-{{device.name}} is Tier 2, "Normal Cybersecurity Risk," because although the device is capable of connecting to another medical or non-medical product, to a network, or to the Internet, it a cybersecurity incident affecting the device could directly result in patient harm to multiple patients.
+{{device.name}} is Tier 2, "Normal Cybersecurity Risk," because although the system is capable of connecting to other products or networks, a cybersecurity incident affecting the system is unlikely to directly cause widespread cardholder financial harm.
 
 ---
 
@@ -55,7 +55,7 @@ ENDTODO
 
 # Software Updates and Patches
 
-TODO: Write a summary describing the design features that permit validated software updates and patches as needed throughout the life cycle of the medical device to continue to ensure its safety and effectiveness.
+TODO: Write a summary describing the design features that permit validated software updates and patches as needed throughout the life cycle of the software to ensure confidentiality, integrity, and availability of cardholder data and transaction processing.
 
 [[FDA-CYBER:7.A.4]]
 
@@ -146,7 +146,7 @@ TODO: demonstrate how this is implemented, e.g., by printing out the associated 
 [[FDA-CYBER:V.A.1.b.v]]
 
 
-*Perform authorization checks based on authentication credentials or other irrefutable evidence. For example, a medical device programmer should have elevated privileges that are granted based on cryptographic authentication or a signal of intent that cannot physically be produced by another device, e.g., a home monitor, with a software-based attack.*
+*Perform authorization checks based on authentication credentials or other irrefutable evidence. For example, privileged maintenance or deployment tools should have elevated privileges that are granted based on cryptographic authentication and multi-factor controls.*
 
 TODO: demonstrate how this is implemented, e.g., by printing out the associated software requirements. If Tier 2, provide a risk-based rationale for why this specific design control isn't appropriate.
 
