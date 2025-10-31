@@ -367,18 +367,26 @@ class InteractiveDataExplorer:
         
         display(output)
 
-# Initialize the explorer
-explorer = InteractiveDataExplorer()
+# If this module is run directly, perform the demo exploration.
+def _demo_run():
+    explorer = InteractiveDataExplorer()
+
+    # Example with the obesity dataset (kept for reference). If the demo file
+    # isn't available, the call will be skipped.
+    try:
+        explorer.load_data('/Users/ksonar/Documents/Technical/project-template/data/heart.csv')
+        explorer.quick_overview()
+        explorer.generate_comprehensive_profile(target_col='target')
+        explorer.create_visualizations(target_col='target')
+        explorer.analyze_target_relationship('target')
+        explorer.suggest_preprocessing_steps()
+
+        # Interactive analysis (if widgets available)
+        explorer.interactive_column_analysis()
+    except Exception:
+        # No demo data available locally; skip demo run silently.
+        pass
 
 
-
-# Example with the obesity dataset
-explorer.load_data('/Users/ksonar/Documents/Technical/project-template/data/heart.csv')
-explorer.quick_overview()
-explorer.generate_comprehensive_profile(target_col='target')
-explorer.create_visualizations(target_col='target')
-explorer.analyze_target_relationship('target')
-explorer.suggest_preprocessing_steps()
-
-# Interactive analysis (if widgets available)
-explorer.interactive_column_analysis()
+if __name__ == '__main__':
+    _demo_run()

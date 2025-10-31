@@ -81,7 +81,7 @@ class ModelTrainer:
             columns_to_drop=self.data_config.get('columns_to_drop', []),
             preprocessor_settings=self.data_config.get('preprocessor_settings', {}),
             visualise=self.data_config.get('visualise_data'),
-            check_imbalance=self.data_config.get('check_imbalance', False),
+            check_imbalance=self.data_config.get('check_imbalance', True),
             test_size=self.data_config.get('test_size', 0.2),
             stratify=self.data_config.get('stratify', False),
             random_state=self.data_config.get('random_state', 42),

@@ -4,7 +4,14 @@ import json
 from typing import Dict, Any, Tuple, Union, List
 
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
-from xgboost import XGBClassifier, XGBRegressor
+try:
+    from xgboost import XGBClassifier, XGBRegressor
+    _HAS_XGBOOST = True
+except Exception:
+    XGBClassifier = None
+    XGBRegressor = None
+    _HAS_XGBOOST = False
+
 from sklearn.linear_model import LinearRegression, LogisticRegression
 
 
@@ -40,10 +47,6 @@ def get_model_and_hyperparams(config: configparser.ConfigParser) -> Tuple[Any, D
             "classification": RandomForestClassifier,
             "regression": RandomForestRegressor
         },
-        "xgboost": {
-            "classification": XGBClassifier,
-            "regression": XGBRegressor
-        },
         "linear_regression": {
             "regression": LinearRegression
         },
@@ -51,6 +54,13 @@ def get_model_and_hyperparams(config: configparser.ConfigParser) -> Tuple[Any, D
             "classification": LogisticRegression
         }
     }
+
+    # Add xgboost mapping only if xgboost is available
+    if _HAS_XGBOOST:
+        model_mapping["xgboost"] = {
+            "classification": XGBClassifier,
+            "regression": XGBRegressor
+        }
 
     if model_name not in model_mapping:
         raise ValueError(f"Unsupported model: {model_name}")
