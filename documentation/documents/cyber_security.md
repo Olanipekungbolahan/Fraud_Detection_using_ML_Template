@@ -233,7 +233,7 @@ TODO: demonstrate how this is implemented, e.g., by printing out the associated 
 
 ## Maintain Confidentiality of Data
 
-*Manufacturers should ensure the confidentiality of any/all data whose disclosure could lead to patient harm (e.g., through use of credentials, encryption). Loss of confidentiality of credentials could be used by a threat to effect multi-patient harm. Lack of encryption to protect sensitive information "at rest" and “in transit” can expose this information to misuse that can lead to patient harm. Other harms, such as loss of confidential protected health information (PHI), are not considered “patient harms” for the purposes of this guidance.*
+*Manufacturers should ensure the confidentiality of any/all data whose disclosure could lead to financial harm or fraud (e.g., cardholder data, credentials). Loss of confidentiality of credentials could enable attackers to commit transaction fraud or to access multiple accounts. Lack of encryption to protect sensitive information "at rest" and "in transit" can expose this information to misuse that can lead to financial loss or reputational damage. Protect sensitive payment data (cardholder data) in accordance with applicable standards and regulations (e.g., PCI-DSS) and local privacy laws.*
 
 TODO: demonstrate how this is implemented, e.g., by printing out the associated software requirements. If Tier 2, provide a risk-based rationale for why this specific design control isn't appropriate.
 

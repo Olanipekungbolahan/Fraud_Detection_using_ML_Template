@@ -40,19 +40,19 @@ The intended release version is {{device.version}}. The documentation's version 
 
 # Software Operation
 
-**Who operates the software (user)? The patient, a caregiver, a healthcare professional, or a combination thereof?**
+**Who operates the software (user)? The cardholder, a fraud analyst, a payments professional, or a combination thereof?**
 
 See the "Users" section of the Software Requirements Specification.
 
-**What is the intended patient population?**
+**What is the intended customer/cardholder population?**
 
 TODO: Fill this in, or refer to another document
 
-**Does the software function focus on a specific disease, condition, patient characteristic or demographic?**
+**Does the software function focus on a specific fraud pattern, customer segment or demographic?**
 
 TODO: Fill this in, or refer to another document
 
-**Does the software provide information that is directly applicable to a specific disease or condition?**
+**Does the software provide information that is directly applicable to fraud detection, risk scoring, or transaction screening?**
 
 TODO: Fill this in, or refer to another document
 

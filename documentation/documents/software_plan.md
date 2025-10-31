@@ -10,15 +10,15 @@ This document for the GSTT CSC Team plans how the software in {{device.name}} wi
 
 {% if device.safety_class == "A" %}
 
-All software items in {{device.name}} are assigned a Class A software-safety class, which means no injury or damage to health could occur if the software fails [[62304:4.3.a]]. See {{workflow.risk_management_file}} for details.
+All software items in {{device.name}} are assigned a Class A risk classification, which means no financial loss is expected if the software fails. See {{workflow.risk_management_file}} for details.
 
 {% elif device.safety_class == "B" %}
 
-All software items in {{device.name}} are assigned a Class B software-safety class, which means non-serious injury could occur if the software fails [[62304:4.3.a]]. See {{workflow.risk_management_file}} for details.
+All software items in {{device.name}} are assigned a Class B risk classification, which means non-serious financial loss may occur if the software fails. See {{workflow.risk_management_file}} for details.
 
 {% else %}
 
-All software items in {{device.name}} are assigned a Class C software-safety class, which means death or serious injury could occur if the software fails [[62304:4.3.a]]. See {{workflow.risk_management_file}} for details.
+All software items in {{device.name}} are assigned a Class C risk classification, which means severe financial loss or significant reputational damage could occur if the software fails. See {{workflow.risk_management_file}} for details.
 
 {% endif %}
 

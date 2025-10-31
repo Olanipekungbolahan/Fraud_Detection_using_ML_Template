@@ -8,3 +8,7 @@ matplotlib
 seaborn
 ipywidgets
 
+# server/runtime
+Flask
+gunicorn
+

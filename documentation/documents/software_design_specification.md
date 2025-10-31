@@ -20,7 +20,7 @@ This document applies to {{device.name}} release {{device.version}}.
 
 # Definitions
 
-**Protected Health Information** (PHI) means individually identifiable information that is created by {{device.name}} and relates to the past, present, or future physical or mental health or condition of any individual, the provision of health care to an individual, or the past, present, or future payment for the provision of health care to an individual.
+**Protected Cardholder Information** (PCI) means individually identifiable information that is created or processed by {{device.name}} and relates to cardholder identity or payment instruments (for example: card number, card expiry, CVV, billing address) or any other information that could be used to commit payment fraud or financial theft.
 
 **UI** is an acronym for user interface.
 

@@ -5,7 +5,7 @@
     <img src="assets/MOps_template_logo.png" alt="Logo" width="50%">
   </a>
 <p align="center">
-A framework for AI applications for healthcare
+A framework for AI applications for credit card fraud detection
 <br />
 <br />
 <a href="https://github.com/GSTT-CSC/Project_template">View repo</a>
